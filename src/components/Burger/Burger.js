@@ -11,7 +11,7 @@ const burger = (props) => {
       });
     })
     .reduce((arr, el) => {
-      return [...arr, ...el];
+      return arr.concat(el);
     }, [])
 
     if (transformedIngredients.length === 0) {
